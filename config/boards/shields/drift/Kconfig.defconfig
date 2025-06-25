@@ -1,0 +1,16 @@
+if SHIELD_drift_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Drift V3N"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_drift_LEFT || SHIELD_drift_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
